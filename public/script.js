@@ -6,11 +6,13 @@ const myVideo = document.createElement('video')
 myVideo.muted = true
 
 
-navigator.mediaDevices.getUserMedia({
+navigator.mediaDevices.getUserMedia(
+    navigator.userAgent.includes("iPhone") ? 
+    {video:true,} : 
+    {
     video: true,
-    audio: true,
-    facingMode: 'user'
-}).then(stream => {
+    audio: true
+    }).then(stream => {
     addVideoStream(myVideo, stream)
 
     myPeer.on('call', call => {
