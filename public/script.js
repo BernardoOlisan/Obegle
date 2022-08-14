@@ -8,7 +8,8 @@ myVideo.muted = true
 
 navigator.mediaDevices.getUserMedia({
     video: true,
-    audio: true
+    audio: true,
+    facingMode: 'user'
 }).then(stream => {
     addVideoStream(myVideo, stream)
 
