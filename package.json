@@ -4,7 +4,7 @@
   "description": "WebRTC video chat app",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "Bernardo Olisan",
   "license": "ISC",

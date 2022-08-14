@@ -1,4 +1,4 @@
-const socket = io('https://obegle.herokuapp.com/')
+const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
 
 const myPeer = new Peer()
